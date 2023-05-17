@@ -1,0 +1,52 @@
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name = "viewport" content="width=device-width">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador de Texto</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <header class="cabecera">
+            <img class="LogoImg" src="imagenes/logo.png" alt="Logo">
+        </header>
+        <main class="principal" >
+            <section class="seccion1">
+                <textarea id="areaPrincipal" class="area" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="contenedor-botones">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                <button class="btn-encriptar">Encriptar</button>
+                <button class="btn-desEncriptar">Desencriptar</button>
+                
+                </div>
+            </section>
+
+            <section class="seccion2">
+                <div class="contenedor-muneco ">
+                    <img class="muneco"src="imagenes/Muñeco.png" alt="Muñeco de alura">
+                </div>
+                <div class="contenedor-parrafo">    
+                    <h3 class="contenedor-h3">Ningún mensaje fue encontrado </h3>
+                </div>
+                 <div class="contenedor-resultado">
+                    <textarea id ="resultado-final" placeholder="Texto encriptado o desencriptado"></textarea>    
+                </div>
+                <div class="contenedor-copiar ">
+                    <button id="btn-copiar">Copiar</button> 
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p class="copyright">&copy Copyright Mario García -Alura - 2023</p>
+        </footer>
+        <script src="encriptador.js"></script>    
+        
+    </body>
+</html>
+
