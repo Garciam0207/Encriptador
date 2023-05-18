@@ -29,14 +29,13 @@ function ocultarSeccionDos() {
 function encriptarTexto(mensaje) {
   var texto = mensaje;
   var textoFinal = "";
+ /* La letra "e" es convertida para "enter"
+  La letra "i" es convertida para "imes"
+  La letra "a" es convertida para "ai"
+  La letra "o" es convertida para "ober"
+  La letra "u" es convertida para "ufat"*/
 
   for (var indice = 0; indice < texto.length; indice++){
-    if (texto[indice] == "a") {
-        textoFinal = textoFinal + "ai"
-    }
-    else if(texto[indice] == "á") {
-        textoFinal = textoFinal + "ai"
-    }
     else if (texto[indice] == "e") {
         textoFinal = textoFinal + "enter"
     }
@@ -49,7 +48,13 @@ function encriptarTexto(mensaje) {
     else if (texto[indice] == "í") {
         textoFinal = textoFinal + "imes"
     }
-    else if (texto[indice] == "o") {
+    if (texto[indice] == "a") {
+        textoFinal = textoFinal + "ai"
+    }
+    else if(texto[indice] == "á") {
+        textoFinal = textoFinal + "ai"
+    } 
+        else if (texto[indice] == "o") {
         textoFinal = textoFinal + "ober"
     }
     else if (texto[indice] == "ó") {
