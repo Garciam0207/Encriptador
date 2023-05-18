@@ -37,7 +37,7 @@ function encriptarTexto(mensaje) {
   La letra "u" es convertida para "ufat"*/
 
   for (var indice = 0; indice < texto.length; indice++){
-    else if (texto[indice] == "e") {
+     if (texto[indice] == "e") {
         textoFinal = textoFinal + "enter"
     }
     else if (texto[indice] == "é") {
@@ -49,7 +49,7 @@ function encriptarTexto(mensaje) {
     else if (texto[indice] == "í") {
         textoFinal = textoFinal + "imes"
     }
-    if (texto[indice] == "a") {
+    else if (texto[indice] == "a") {
         textoFinal = textoFinal + "ai"
     }
     else if(texto[indice] == "á") {
