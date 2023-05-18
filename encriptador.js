@@ -131,7 +131,7 @@ function copiarPortaPapeles() {
   try {
     var successful = document.execCommand('copy'); // Copiando
     if (successful) {
-      texto.innerHTML = 'Texto copiado con exito!';
+      texto.innerHTML = 'Texto copiado con éxito!';
       limpiarTextarea(); // Limpia el textarea después de copiar
     } else {
       texto.innerHTML = 'texto no copiado!';
